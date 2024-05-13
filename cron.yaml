@@ -1,0 +1,229 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen0
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen1
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen2
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen3
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen4
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen5
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen6
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen7
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen8
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: podgen9
+  namespace: default
+spec:
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            "zarf.dev/agent": "ignore"
+            bug: "reproduce"
+            api: "call"
+        spec:
+          containers:
+          - image: ubuntu
+            command: ["sh","-c","sleep 10"]
+            name: sleepanddie
+          restartPolicy: Never
+  schedule: 0/1 * * * *
+status: {}
