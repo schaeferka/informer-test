@@ -1,0 +1,21 @@
+{
+  "name": "informer",
+  "version": "0.0.0",
+  "description": "Informer testing",
+  "main": "informer.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build .",
+    "start": "node dist/informer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schaeferka/informer-test.git"
+  },
+  "author": "",
+  "homepage": "https://github.com/schaeferka/informer-test#readme",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.21.0",
+    "typescript": "^5.4.5"
+  }
+}
