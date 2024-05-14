@@ -13,7 +13,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: informer
-  name: informer
+  name: informer-deployment
   namespace: informer
 spec:
   replicas: 1
@@ -29,7 +29,7 @@ spec:
     spec:
       serviceAccountName: informer
       containers:
-      - image: kaschaefer/informer:v1alpha3
+      - image: kaschaefer/informer:v1alpha5
         name: informer
         ports:
         - containerPort: 8443
