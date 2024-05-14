@@ -3,14 +3,14 @@ import * as k8s from '@kubernetes/client-node';
 // Set up express for liveness and readiness probes
 const express = require('express');
 const app = express();
-const port = 8443;  // Ensure this matches the exposed port in your Dockerfile and Kubernetes config
+const port = 8443;
 
 app.get('/health', (req, res) => {
     res.status(200).send('OK');
 });
 
 app.get('/ready', (req, res) => {
-    // Implement any readiness checks you need here. For simplicity, we're just sending OK.
+    // Implement any readiness checks 
     res.status(200).send('OK');
 });
 
